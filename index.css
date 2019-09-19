@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    /* scroll snap */
+    /* scroll-snap-type: y mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-padding-bottom: 50px; */
+}
+
+body p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+header {
+    background-color: rgba(255, 0, 0, 0.9);
+    font-size: 23px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px 25px 5px 25px;
+    text-align: right;
+    grid: 15vh;
+}
+
+header img {
+    inline-size: 7%;
+    float: right; /* Høyrestiller */
+}
+
+main section {
+    min-height: 100vh;
+    padding-top: 150px;
+    padding-left: 30px;
+     /* scroll snap*/
+    /* scroll-snap-align: start; */
+}
+
+header nav a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 22px;
+    color: white;
+}
+
+h1 {
+    font-size: 64px;
+    color: red;
+    padding-bottom: 8px;
+}
+
+
+h2 {
+    font-size: 23px;
+    font-weight: 550;
+    padding-bottom: 30px;
+}
+
+.scroll-container {
+    width: 100vw;
+    margin: auto;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.slides {
+    width: 400%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 62vh;
+}
+
+.slides article {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    scroll-snap-align: center;
+}
+
+.slides article img {
+    max-height: 62vh;
+    width: 60vw;
+    border-radius: 12px; /* AVrunder hjørner */
+}
+
+.slides article li {
+    list-style-position: inside; /* Får punkt til å ligge inni boksen */
+    padding-left: 5px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    max-width: 450px;
+}
+
+.overskrift {
+    list-style: none;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.innledning {
+    list-style: none; /* Fjerner punkt */
+}
+
+#a-2 li {
+    list-style: none;
+}
+
+#a-3 li {
+    list-style: none;
+}
+
+#skole {
+    background-image: url(./images/skole.jpeg);
+    background-repeat: no-repeat;
+    background-position-x: 320px;
+    background-size: auto 104%;
+}
+
+#statistikk-mat {
+    padding-bottom: 50px;
+    max-width: 700px;
+}
+
+#mat {
+    max-width: 700px;
+}
+
+#transport {
+    background-image: url(./images/transport.jpg);
+    background-repeat: no-repeat;
+    background-size: 101%;
+    object-fit: cover;
+}
+
+#transport h1 {
+    text-align: right;
+    padding-right: 30px;
+}
+
+#transport h2 {
+    color: white;
+    text-align: right;
+    float: right;
+    padding-right: 30px;
+    max-width: 700px;
+}
+
+.statistikk {
+    color: white;
+    text-align: right;
+    float: right;
+    padding-bottom: 50px;
+    max-width: 800px;
+    padding-right: 30px;
+}
+
+#arbeid {
+    background-image: url(./images/arbeid.jpeg);
+    background-repeat: no-repeat;
+    background-size: 101%;
+}
+
+#arbeid h2 {
+    color: white;
+}
+
+.arbeid {
+    color: white;
+    padding-bottom: 50px;
+    max-width: 700px;
+}
+
+footer {
+    background-color: rgba(255, 0, 0, 0.9);
+    color: white;
+    min-height: 100px;
+    padding: 40px 20px;
+}
+
+#kontakt {
+    font-weight: bold;
+}
+
+footer p {
+    padding-bottom: 10px;
+}
+
+footer a {
+    color: white;
+}
